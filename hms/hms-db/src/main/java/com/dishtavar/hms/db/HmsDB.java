@@ -1,4 +1,4 @@
-package com.dishtavar.hms.api;
+package com.dishtavar.hms.db;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class Api {
+public class HmsDB {
 	public static void main(String[] args) {
-		SpringApplication.run(Api.class, args);
+		SpringApplication.run(HmsDB.class, args);
 	}
 }
