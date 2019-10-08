@@ -1,5 +1,7 @@
 package com.dishtavar.hms.api.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,6 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class TestController {
 
+@GetMapping(value = "/{id}")
+  public Long findById(@PathVariable("id") Long id) {
+      return id;
+  }
+	
 //	@GetMapping(value = "/{id}")
 //    public Foo findById(@PathVariable("id") Long id) {
 //        return RestPreconditions.checkFound(service.findById(id));
